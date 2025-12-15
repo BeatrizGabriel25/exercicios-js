@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+</head>
+<body>
+<script>
+    // - Cria uma tag script, para conter o vosso código javascript;
+    // Copia para o ficheiro o seguinte array:
+const paises = ['Albânia','Bolívia','Canadá','Dinamarca','Etiópia','Finlândia','Alemanha','Hungria','Irlanda','Japão','Quênia']
+ // Cria um ciclo que faça console.log de cada um dos países;
+ for (let x = 0; x < paises.length; x++) {
+    console.log(paises[x]);
+}
+
+// Cria uma função que devolve o número de itens do array países;
+function numeroDePaises() {
+    return paises.length;
+}
+
+console.log("Número de países:", numeroDePaises());
+
+// - Adiciona à primeira posição do array o país Portugal;
+paises.unshift('Portugal');
+
+// Adiciona à última posição do array o país Espanha
+paises.push('Espanha');
+
+// Faz console.log dos 3 últimos itens do array, usando apenas uma função;
+function ultimosTres() {
+    return paises.slice(-3); // slice com negativo pega do final
+}
+
+console.log("Últimos 3 países:", ultimosTres());
+
+// Faz console.log de todos os países numa só string separado por “ - “ (espaço hífen espaço);
+console.log(paises.join(" - "));
+
+</script>
+
+</body>
+</html>
