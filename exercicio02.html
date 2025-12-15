@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+</head>
+<body>
+
+<script>
+    //  código JavaScript do exercício 2
+    // Cria uma função que: - Aceite 2 argumentos: preço e desconto;
+function calcularPreco(preco, desconto) {
+    // Se o desconto for menor que 10% retona o valor mais o desconto;
+    if (desconto < 10 && desconto > 0) {
+        return preco + desconto;
+    }
+    // Se o desconto for maior que 10% mas inferior a 30% retorna o valor menos o desconto;
+    else if (desconto > 10 && desconto < 30) {
+        return preco - desconto;
+    }
+    // Se o desconto for 0 retorna a multiplicação do valor por 2;
+    else if (desconto === 0) {
+        return preco * 2;
+    }
+
+    else {
+        return preco;
+    }
+}
+
+
+console.log(calcularPreco(100, 0));    
+console.log(calcularPreco(100, 5));    
+console.log(calcularPreco(100, 15));   
+console.log(calcularPreco(100, 30));
+console.log(calcularPreco(100, 10));
+
+
+</script>
+
+</body>
+</html>
